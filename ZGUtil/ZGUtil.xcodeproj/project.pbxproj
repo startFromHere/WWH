@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF918B9028E4975200D1C8F3 /* LTThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B8E28E4975200D1C8F3 /* LTThreadSafeArray.m */; };
 		CF918B9628E498A400D1C8F3 /* LTThreadSafeProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9528E498A400D1C8F3 /* LTThreadSafeProxy.m */; };
-		CF918B9928E4A14500D1C8F3 /* LTThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9828E4A14500D1C8F3 /* LTThreadSafeDictionary.m */; };
+		CF918B9E28E5DD3200D1C8F3 /* ZGAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9B28E5DD3200D1C8F3 /* ZGAsyncLayer.m */; };
+		CF918B9F28E5DD3200D1C8F3 /* ZGSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9C28E5DD3200D1C8F3 /* ZGSentinel.m */; };
 		CF98696228E2E7CC00672F5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF98696128E2E7CC00672F5A /* AppDelegate.m */; };
 		CF98696528E2E7CC00672F5A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF98696428E2E7CC00672F5A /* SceneDelegate.m */; };
 		CF98696828E2E7CC00672F5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF98696728E2E7CC00672F5A /* ViewController.m */; };
@@ -41,12 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CF918B8E28E4975200D1C8F3 /* LTThreadSafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTThreadSafeArray.m; sourceTree = "<group>"; };
-		CF918B8F28E4975200D1C8F3 /* LTThreadSafeArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTThreadSafeArray.h; sourceTree = "<group>"; };
 		CF918B9428E498A400D1C8F3 /* LTThreadSafeProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTThreadSafeProxy.h; sourceTree = "<group>"; };
 		CF918B9528E498A400D1C8F3 /* LTThreadSafeProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTThreadSafeProxy.m; sourceTree = "<group>"; };
-		CF918B9728E4A14500D1C8F3 /* LTThreadSafeDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTThreadSafeDictionary.h; sourceTree = "<group>"; };
-		CF918B9828E4A14500D1C8F3 /* LTThreadSafeDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTThreadSafeDictionary.m; sourceTree = "<group>"; };
+		CF918B9A28E5DD3200D1C8F3 /* ZGAsyncLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGAsyncLayer.h; sourceTree = "<group>"; };
+		CF918B9B28E5DD3200D1C8F3 /* ZGAsyncLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGAsyncLayer.m; sourceTree = "<group>"; };
+		CF918B9C28E5DD3200D1C8F3 /* ZGSentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGSentinel.m; sourceTree = "<group>"; };
+		CF918B9D28E5DD3200D1C8F3 /* ZGSentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGSentinel.h; sourceTree = "<group>"; };
 		CF98695D28E2E7CC00672F5A /* ZGUtil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGUtil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF98696028E2E7CC00672F5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF98696128E2E7CC00672F5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,10 +156,10 @@
 				CF98699728E2E80A00672F5A /* ZGDispatchQueuePool.m */,
 				CF918B9428E498A400D1C8F3 /* LTThreadSafeProxy.h */,
 				CF918B9528E498A400D1C8F3 /* LTThreadSafeProxy.m */,
-				CF918B8F28E4975200D1C8F3 /* LTThreadSafeArray.h */,
-				CF918B8E28E4975200D1C8F3 /* LTThreadSafeArray.m */,
-				CF918B9728E4A14500D1C8F3 /* LTThreadSafeDictionary.h */,
-				CF918B9828E4A14500D1C8F3 /* LTThreadSafeDictionary.m */,
+				CF918B9A28E5DD3200D1C8F3 /* ZGAsyncLayer.h */,
+				CF918B9B28E5DD3200D1C8F3 /* ZGAsyncLayer.m */,
+				CF918B9D28E5DD3200D1C8F3 /* ZGSentinel.h */,
+				CF918B9C28E5DD3200D1C8F3 /* ZGSentinel.m */,
 			);
 			path = Kits;
 			sourceTree = "<group>";
@@ -294,13 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF918B9928E4A14500D1C8F3 /* LTThreadSafeDictionary.m in Sources */,
+				CF918B9F28E5DD3200D1C8F3 /* ZGSentinel.m in Sources */,
 				CF918B9628E498A400D1C8F3 /* LTThreadSafeProxy.m in Sources */,
 				CF98696828E2E7CC00672F5A /* ViewController.m in Sources */,
 				CF98696228E2E7CC00672F5A /* AppDelegate.m in Sources */,
 				CF98697328E2E7CD00672F5A /* main.m in Sources */,
+				CF918B9E28E5DD3200D1C8F3 /* ZGAsyncLayer.m in Sources */,
 				CF98699828E2E80A00672F5A /* ZGDispatchQueuePool.m in Sources */,
-				CF918B9028E4975200D1C8F3 /* LTThreadSafeArray.m in Sources */,
 				CF98696528E2E7CC00672F5A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

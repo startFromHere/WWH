@@ -28,4 +28,19 @@
     dispatch_semaphore_signal(_semaphore);
 }
 
++ (NSMutableArray *)threadSafeMutableArray {
+    return [self _threadSafeObjectOfClass:[NSMutableArray class]];
+}
+
++ (NSMutableDictionary *)threadSafeMutableDictionary {
+    return [self _threadSafeObjectOfClass:[NSMutableDictionary class]];
+}
+
++ (id)_threadSafeObjectOfClass:(Class)cls {
+    NSMutableArray *innerObj = [[cls alloc] init];
+    LTThreadSafeProxy *proxy = [[LTThreadSafeProxy alloc] initWithTarget:innerObj];
+    
+    return proxy;
+}
+
 @end
