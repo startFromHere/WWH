@@ -14,6 +14,12 @@
 
 @end
 
+
+#define fuc() {   \
+int a = 0;  \
+int b = 1;  \
+a = a + b;  \
+}
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -23,7 +29,12 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self threadSafeArrayTest];
-    
+    if (1 == 0){}
+//        fuc()
+    else {
+        NSLog(@"aha");
+    }
+
 }
 
 - (void)threadSafeArrayTest {

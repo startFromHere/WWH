@@ -10,6 +10,7 @@
 		CF918B9628E498A400D1C8F3 /* LTThreadSafeProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9528E498A400D1C8F3 /* LTThreadSafeProxy.m */; };
 		CF918B9E28E5DD3200D1C8F3 /* ZGAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9B28E5DD3200D1C8F3 /* ZGAsyncLayer.m */; };
 		CF918B9F28E5DD3200D1C8F3 /* ZGSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9C28E5DD3200D1C8F3 /* ZGSentinel.m */; };
+		CF918BA428E7374F00D1C8F3 /* UIFont+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918BA328E7374F00D1C8F3 /* UIFont+YYAdd.m */; };
 		CF98696228E2E7CC00672F5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF98696128E2E7CC00672F5A /* AppDelegate.m */; };
 		CF98696528E2E7CC00672F5A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF98696428E2E7CC00672F5A /* SceneDelegate.m */; };
 		CF98696828E2E7CC00672F5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF98696728E2E7CC00672F5A /* ViewController.m */; };
@@ -47,6 +48,9 @@
 		CF918B9B28E5DD3200D1C8F3 /* ZGAsyncLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGAsyncLayer.m; sourceTree = "<group>"; };
 		CF918B9C28E5DD3200D1C8F3 /* ZGSentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGSentinel.m; sourceTree = "<group>"; };
 		CF918B9D28E5DD3200D1C8F3 /* ZGSentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGSentinel.h; sourceTree = "<group>"; };
+		CF918BA228E7374F00D1C8F3 /* UIFont+YYAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+YYAdd.h"; sourceTree = "<group>"; };
+		CF918BA328E7374F00D1C8F3 /* UIFont+YYAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+YYAdd.m"; sourceTree = "<group>"; };
+		CF918BA528E73B2200D1C8F3 /* YYKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitMacro.h; sourceTree = "<group>"; };
 		CF98695D28E2E7CC00672F5A /* ZGUtil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGUtil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF98696028E2E7CC00672F5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CF98696128E2E7CC00672F5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -93,6 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF918BA028E735E700D1C8F3 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		CF918BA128E7370F00D1C8F3 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				CF918BA228E7374F00D1C8F3 /* UIFont+YYAdd.h */,
+				CF918BA328E7374F00D1C8F3 /* UIFont+YYAdd.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 		CF98695428E2E7CB00672F5A = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +142,7 @@
 				CF98696428E2E7CC00672F5A /* SceneDelegate.m */,
 				CF98696628E2E7CC00672F5A /* ViewController.h */,
 				CF98696728E2E7CC00672F5A /* ViewController.m */,
+				CF918BA128E7370F00D1C8F3 /* UIKit */,
 				CF98699528E2E7DC00672F5A /* Kits */,
 				CF98696928E2E7CC00672F5A /* Main.storyboard */,
 				CF98696C28E2E7CD00672F5A /* Assets.xcassets */,
@@ -152,6 +173,8 @@
 		CF98699528E2E7DC00672F5A /* Kits */ = {
 			isa = PBXGroup;
 			children = (
+				CF918BA528E73B2200D1C8F3 /* YYKitMacro.h */,
+				CF918BA028E735E700D1C8F3 /* Text */,
 				CF98699628E2E80A00672F5A /* ZGDispatchQueuePool.h */,
 				CF98699728E2E80A00672F5A /* ZGDispatchQueuePool.m */,
 				CF918B9428E498A400D1C8F3 /* LTThreadSafeProxy.h */,
@@ -297,6 +320,7 @@
 				CF918B9F28E5DD3200D1C8F3 /* ZGSentinel.m in Sources */,
 				CF918B9628E498A400D1C8F3 /* LTThreadSafeProxy.m in Sources */,
 				CF98696828E2E7CC00672F5A /* ViewController.m in Sources */,
+				CF918BA428E7374F00D1C8F3 /* UIFont+YYAdd.m in Sources */,
 				CF98696228E2E7CC00672F5A /* AppDelegate.m in Sources */,
 				CF98697328E2E7CD00672F5A /* main.m in Sources */,
 				CF918B9E28E5DD3200D1C8F3 /* ZGAsyncLayer.m in Sources */,
