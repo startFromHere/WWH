@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF730CE328F2AC6F000A548E /* YYTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CE228F2AC6F000A548E /* YYTextAttribute.m */; };
+		CF730CE628F2B915000A548E /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CE528F2B915000A548E /* NSObject+YYAdd.m */; };
 		CF918B9628E498A400D1C8F3 /* LTThreadSafeProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9528E498A400D1C8F3 /* LTThreadSafeProxy.m */; };
 		CF918B9E28E5DD3200D1C8F3 /* ZGAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9B28E5DD3200D1C8F3 /* ZGAsyncLayer.m */; };
 		CF918B9F28E5DD3200D1C8F3 /* ZGSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9C28E5DD3200D1C8F3 /* ZGSentinel.m */; };
@@ -42,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF730CE128F2AC6F000A548E /* YYTextAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextAttribute.h; sourceTree = "<group>"; };
+		CF730CE228F2AC6F000A548E /* YYTextAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextAttribute.m; sourceTree = "<group>"; };
+		CF730CE428F2B915000A548E /* NSObject+YYAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYAdd.h"; sourceTree = "<group>"; };
+		CF730CE528F2B915000A548E /* NSObject+YYAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYAdd.m"; sourceTree = "<group>"; };
 		CF918B9428E498A400D1C8F3 /* LTThreadSafeProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTThreadSafeProxy.h; sourceTree = "<group>"; };
 		CF918B9528E498A400D1C8F3 /* LTThreadSafeProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTThreadSafeProxy.m; sourceTree = "<group>"; };
 		CF918B9A28E5DD3200D1C8F3 /* ZGAsyncLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGAsyncLayer.h; sourceTree = "<group>"; };
@@ -97,11 +103,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CF918BA028E735E700D1C8F3 /* Text */ = {
+		CF730CE028F2AC53000A548E /* Text */ = {
 			isa = PBXGroup;
 			children = (
+				CF730CE128F2AC6F000A548E /* YYTextAttribute.h */,
+				CF730CE228F2AC6F000A548E /* YYTextAttribute.m */,
 			);
 			path = Text;
+			sourceTree = "<group>";
+		};
+		CF730CE728F2B980000A548E /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				CF730CE428F2B915000A548E /* NSObject+YYAdd.h */,
+				CF730CE528F2B915000A548E /* NSObject+YYAdd.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		CF918BA128E7370F00D1C8F3 /* UIKit */ = {
@@ -142,6 +159,7 @@
 				CF98696428E2E7CC00672F5A /* SceneDelegate.m */,
 				CF98696628E2E7CC00672F5A /* ViewController.h */,
 				CF98696728E2E7CC00672F5A /* ViewController.m */,
+				CF730CE728F2B980000A548E /* Foundation */,
 				CF918BA128E7370F00D1C8F3 /* UIKit */,
 				CF98699528E2E7DC00672F5A /* Kits */,
 				CF98696928E2E7CC00672F5A /* Main.storyboard */,
@@ -173,8 +191,8 @@
 		CF98699528E2E7DC00672F5A /* Kits */ = {
 			isa = PBXGroup;
 			children = (
+				CF730CE028F2AC53000A548E /* Text */,
 				CF918BA528E73B2200D1C8F3 /* YYKitMacro.h */,
-				CF918BA028E735E700D1C8F3 /* Text */,
 				CF98699628E2E80A00672F5A /* ZGDispatchQueuePool.h */,
 				CF98699728E2E80A00672F5A /* ZGDispatchQueuePool.m */,
 				CF918B9428E498A400D1C8F3 /* LTThreadSafeProxy.h */,
@@ -324,7 +342,9 @@
 				CF98696228E2E7CC00672F5A /* AppDelegate.m in Sources */,
 				CF98697328E2E7CD00672F5A /* main.m in Sources */,
 				CF918B9E28E5DD3200D1C8F3 /* ZGAsyncLayer.m in Sources */,
+				CF730CE328F2AC6F000A548E /* YYTextAttribute.m in Sources */,
 				CF98699828E2E80A00672F5A /* ZGDispatchQueuePool.m in Sources */,
+				CF730CE628F2B915000A548E /* NSObject+YYAdd.m in Sources */,
 				CF98696528E2E7CC00672F5A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
