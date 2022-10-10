@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF730CE328F2AC6F000A548E /* YYTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CE228F2AC6F000A548E /* YYTextAttribute.m */; };
-		CF730CE628F2B915000A548E /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CE528F2B915000A548E /* NSObject+YYAdd.m */; };
+		CF730CE328F2AC6F000A548E /* ZGTextAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CE228F2AC6F000A548E /* ZGTextAttribute.m */; };
+		CF730CE628F2B915000A548E /* NSObject+ZGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CE528F2B915000A548E /* NSObject+ZGAdd.m */; };
+		CF730CED28F3A848000A548E /* ZGTextArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CEC28F3A848000A548E /* ZGTextArchiver.m */; };
+		CF730CF028F3A8FD000A548E /* ZGTextRunDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CEF28F3A8FD000A548E /* ZGTextRunDelegate.m */; };
+		CF730CF328F3B006000A548E /* ZGTextRubyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CF228F3B006000A548E /* ZGTextRubyAnnotation.m */; };
+		CF730CF628F3BE47000A548E /* NSAttributedString+ZGText.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CF528F3BE47000A548E /* NSAttributedString+ZGText.m */; };
+		CF730CF928F3C583000A548E /* NSParagraphStyle+ZGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CF828F3C583000A548E /* NSParagraphStyle+ZGAdd.m */; };
+		CF730CFC28F3CBB4000A548E /* UIDevice+ZGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CF730CFB28F3CBB4000A548E /* UIDevice+ZGAdd.m */; };
 		CF918B9628E498A400D1C8F3 /* LTThreadSafeProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9528E498A400D1C8F3 /* LTThreadSafeProxy.m */; };
 		CF918B9E28E5DD3200D1C8F3 /* ZGAsyncLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9B28E5DD3200D1C8F3 /* ZGAsyncLayer.m */; };
 		CF918B9F28E5DD3200D1C8F3 /* ZGSentinel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918B9C28E5DD3200D1C8F3 /* ZGSentinel.m */; };
-		CF918BA428E7374F00D1C8F3 /* UIFont+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918BA328E7374F00D1C8F3 /* UIFont+YYAdd.m */; };
+		CF918BA428E7374F00D1C8F3 /* UIFont+ZGAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CF918BA328E7374F00D1C8F3 /* UIFont+ZGAdd.m */; };
 		CF98696228E2E7CC00672F5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF98696128E2E7CC00672F5A /* AppDelegate.m */; };
 		CF98696528E2E7CC00672F5A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF98696428E2E7CC00672F5A /* SceneDelegate.m */; };
 		CF98696828E2E7CC00672F5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF98696728E2E7CC00672F5A /* ViewController.m */; };
@@ -44,18 +50,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CF730CE128F2AC6F000A548E /* YYTextAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYTextAttribute.h; sourceTree = "<group>"; };
-		CF730CE228F2AC6F000A548E /* YYTextAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYTextAttribute.m; sourceTree = "<group>"; };
-		CF730CE428F2B915000A548E /* NSObject+YYAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYAdd.h"; sourceTree = "<group>"; };
-		CF730CE528F2B915000A548E /* NSObject+YYAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYAdd.m"; sourceTree = "<group>"; };
+		CF730CE128F2AC6F000A548E /* ZGTextAttribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTextAttribute.h; sourceTree = "<group>"; };
+		CF730CE228F2AC6F000A548E /* ZGTextAttribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTextAttribute.m; sourceTree = "<group>"; };
+		CF730CE428F2B915000A548E /* NSObject+ZGAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ZGAdd.h"; sourceTree = "<group>"; };
+		CF730CE528F2B915000A548E /* NSObject+ZGAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ZGAdd.m"; sourceTree = "<group>"; };
+		CF730CEB28F3A848000A548E /* ZGTextArchiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTextArchiver.h; sourceTree = "<group>"; };
+		CF730CEC28F3A848000A548E /* ZGTextArchiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTextArchiver.m; sourceTree = "<group>"; };
+		CF730CEE28F3A8FC000A548E /* ZGTextRunDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTextRunDelegate.h; sourceTree = "<group>"; };
+		CF730CEF28F3A8FD000A548E /* ZGTextRunDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTextRunDelegate.m; sourceTree = "<group>"; };
+		CF730CF128F3B006000A548E /* ZGTextRubyAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTextRubyAnnotation.h; sourceTree = "<group>"; };
+		CF730CF228F3B006000A548E /* ZGTextRubyAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTextRubyAnnotation.m; sourceTree = "<group>"; };
+		CF730CF428F3BE47000A548E /* NSAttributedString+ZGText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+ZGText.h"; sourceTree = "<group>"; };
+		CF730CF528F3BE47000A548E /* NSAttributedString+ZGText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+ZGText.m"; sourceTree = "<group>"; };
+		CF730CF728F3C583000A548E /* NSParagraphStyle+ZGAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSParagraphStyle+ZGAdd.h"; sourceTree = "<group>"; };
+		CF730CF828F3C583000A548E /* NSParagraphStyle+ZGAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSParagraphStyle+ZGAdd.m"; sourceTree = "<group>"; };
+		CF730CFA28F3CBB4000A548E /* UIDevice+ZGAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ZGAdd.h"; sourceTree = "<group>"; };
+		CF730CFB28F3CBB4000A548E /* UIDevice+ZGAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ZGAdd.m"; sourceTree = "<group>"; };
 		CF918B9428E498A400D1C8F3 /* LTThreadSafeProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LTThreadSafeProxy.h; sourceTree = "<group>"; };
 		CF918B9528E498A400D1C8F3 /* LTThreadSafeProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTThreadSafeProxy.m; sourceTree = "<group>"; };
 		CF918B9A28E5DD3200D1C8F3 /* ZGAsyncLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGAsyncLayer.h; sourceTree = "<group>"; };
 		CF918B9B28E5DD3200D1C8F3 /* ZGAsyncLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGAsyncLayer.m; sourceTree = "<group>"; };
 		CF918B9C28E5DD3200D1C8F3 /* ZGSentinel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZGSentinel.m; sourceTree = "<group>"; };
 		CF918B9D28E5DD3200D1C8F3 /* ZGSentinel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZGSentinel.h; sourceTree = "<group>"; };
-		CF918BA228E7374F00D1C8F3 /* UIFont+YYAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+YYAdd.h"; sourceTree = "<group>"; };
-		CF918BA328E7374F00D1C8F3 /* UIFont+YYAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+YYAdd.m"; sourceTree = "<group>"; };
+		CF918BA228E7374F00D1C8F3 /* UIFont+ZGAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+ZGAdd.h"; sourceTree = "<group>"; };
+		CF918BA328E7374F00D1C8F3 /* UIFont+ZGAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ZGAdd.m"; sourceTree = "<group>"; };
 		CF918BA528E73B2200D1C8F3 /* YYKitMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYKitMacro.h; sourceTree = "<group>"; };
 		CF98695D28E2E7CC00672F5A /* ZGUtil.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGUtil.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF98696028E2E7CC00672F5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,8 +124,18 @@
 		CF730CE028F2AC53000A548E /* Text */ = {
 			isa = PBXGroup;
 			children = (
-				CF730CE128F2AC6F000A548E /* YYTextAttribute.h */,
-				CF730CE228F2AC6F000A548E /* YYTextAttribute.m */,
+				CF730CE128F2AC6F000A548E /* ZGTextAttribute.h */,
+				CF730CE228F2AC6F000A548E /* ZGTextAttribute.m */,
+				CF730CEB28F3A848000A548E /* ZGTextArchiver.h */,
+				CF730CEC28F3A848000A548E /* ZGTextArchiver.m */,
+				CF730CEE28F3A8FC000A548E /* ZGTextRunDelegate.h */,
+				CF730CEF28F3A8FD000A548E /* ZGTextRunDelegate.m */,
+				CF730CF128F3B006000A548E /* ZGTextRubyAnnotation.h */,
+				CF730CF228F3B006000A548E /* ZGTextRubyAnnotation.m */,
+				CF730CF428F3BE47000A548E /* NSAttributedString+ZGText.h */,
+				CF730CF528F3BE47000A548E /* NSAttributedString+ZGText.m */,
+				CF730CF728F3C583000A548E /* NSParagraphStyle+ZGAdd.h */,
+				CF730CF828F3C583000A548E /* NSParagraphStyle+ZGAdd.m */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -115,8 +143,8 @@
 		CF730CE728F2B980000A548E /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				CF730CE428F2B915000A548E /* NSObject+YYAdd.h */,
-				CF730CE528F2B915000A548E /* NSObject+YYAdd.m */,
+				CF730CE428F2B915000A548E /* NSObject+ZGAdd.h */,
+				CF730CE528F2B915000A548E /* NSObject+ZGAdd.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -124,8 +152,10 @@
 		CF918BA128E7370F00D1C8F3 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				CF918BA228E7374F00D1C8F3 /* UIFont+YYAdd.h */,
-				CF918BA328E7374F00D1C8F3 /* UIFont+YYAdd.m */,
+				CF918BA228E7374F00D1C8F3 /* UIFont+ZGAdd.h */,
+				CF918BA328E7374F00D1C8F3 /* UIFont+ZGAdd.m */,
+				CF730CFA28F3CBB4000A548E /* UIDevice+ZGAdd.h */,
+				CF730CFB28F3CBB4000A548E /* UIDevice+ZGAdd.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -335,16 +365,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF730CF928F3C583000A548E /* NSParagraphStyle+ZGAdd.m in Sources */,
 				CF918B9F28E5DD3200D1C8F3 /* ZGSentinel.m in Sources */,
 				CF918B9628E498A400D1C8F3 /* LTThreadSafeProxy.m in Sources */,
+				CF730CF028F3A8FD000A548E /* ZGTextRunDelegate.m in Sources */,
 				CF98696828E2E7CC00672F5A /* ViewController.m in Sources */,
-				CF918BA428E7374F00D1C8F3 /* UIFont+YYAdd.m in Sources */,
+				CF918BA428E7374F00D1C8F3 /* UIFont+ZGAdd.m in Sources */,
+				CF730CFC28F3CBB4000A548E /* UIDevice+ZGAdd.m in Sources */,
 				CF98696228E2E7CC00672F5A /* AppDelegate.m in Sources */,
+				CF730CED28F3A848000A548E /* ZGTextArchiver.m in Sources */,
 				CF98697328E2E7CD00672F5A /* main.m in Sources */,
+				CF730CF328F3B006000A548E /* ZGTextRubyAnnotation.m in Sources */,
 				CF918B9E28E5DD3200D1C8F3 /* ZGAsyncLayer.m in Sources */,
-				CF730CE328F2AC6F000A548E /* YYTextAttribute.m in Sources */,
+				CF730CE328F2AC6F000A548E /* ZGTextAttribute.m in Sources */,
 				CF98699828E2E80A00672F5A /* ZGDispatchQueuePool.m in Sources */,
-				CF730CE628F2B915000A548E /* NSObject+YYAdd.m in Sources */,
+				CF730CF628F3BE47000A548E /* NSAttributedString+ZGText.m in Sources */,
+				CF730CE628F2B915000A548E /* NSObject+ZGAdd.m in Sources */,
 				CF98696528E2E7CC00672F5A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

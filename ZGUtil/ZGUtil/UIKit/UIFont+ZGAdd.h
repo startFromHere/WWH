@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIFont (YYAdd) <NSCoding>
+@interface UIFont (ZGAdd) <NSCoding>
 
 @property (nonatomic, readonly) BOOL isBold NS_AVAILABLE_IOS(7_0);
 @property (nonatomic, readonly) BOOL isItalic NS_AVAILABLE_IOS(7_0);
@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (nullable UIFont *)fontWithCTFont:(CTFontRef)CTFont;
 
-+ (nullable UIFont *)fontWithCGFont:(CTFontRef)CTFont size:(CGFloat)size;
++ (nullable UIFont *)fontWithCGFont:(CGFontRef)CGFont size:(CGFloat)size;
 
 - (nullable CTFontRef)CTFontRef CF_RETURNS_RETAINED;
 

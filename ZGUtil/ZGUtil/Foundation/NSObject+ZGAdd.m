@@ -1,16 +1,16 @@
 //
-//  NSObject+YYAdd.m
+//  NSObject+ZGAdd.m
 //  ZGUtil
 //
 //  Created by 刘涛 on 2022/10/9.
 //
 
-#import "NSObject+YYAdd.h"
+#import "NSObject+ZGAdd.h"
 #import "YYKitMacro.h"
 #import <objc/objc.h>
 #import <objc/runtime.h>
 
-@implementation NSObject (YYAdd)
+@implementation NSObject (ZGAdd)
 
 #define INIT_INV(_last_arg_, _return_)\
 NSMethodSignature *sig = [self methodSignatureForSelector:sel];\
@@ -334,10 +334,10 @@ return @(ret);  \
     objc_setAssociatedObject(self, key, value, OBJC_ASSOCIATION_ASSIGN);
 }
 - (nullable id)getAssociatedValueForKey:(void *)key {
-    objc_removeAssociatedObjects(self);
+    return objc_getAssociatedObject(self, key);
 }
 - (void)removeAssociatedValues {
-    return objc_getAssociatedObject(self, key);
+    objc_removeAssociatedObjects(self);
 }
 + (NSString *)className {
     return NSStringFromClass(self);

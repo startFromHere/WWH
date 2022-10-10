@@ -1,5 +1,5 @@
 //
-//  NSObject+YYAdd.h
+//  NSObject+ZGAdd.h
 //  ZGUtil
 //
 //  Created by 刘涛 on 2022/10/9.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (YYAdd)
+@interface NSObject (ZGAdd)
 
 - (nullable id)performSelectorWithArgs:(SEL)sel, ...;
 - (void)performSelectorWithArgs:(SEL)sel afterDelay:(NSTimeInterval)delay, ...;
